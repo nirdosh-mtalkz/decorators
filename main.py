@@ -119,5 +119,5 @@ a=[1,2,3]
 b=['a','b','c','d']
 r = range(5)
 
-res = zip_longest(a,b,r,fillvalue='?')
+res = zip_longest(a,b,r,fillvalue=None)
 print(list(res))
