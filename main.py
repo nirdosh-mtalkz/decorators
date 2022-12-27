@@ -121,3 +121,20 @@ r = range(5)
 
 res = zip_longest(a,b,r,fillvalue=None)
 print(list(res))
+
+emp ={'Name':'Naman','Age':'21','DOB':'19-11-2001'}
+field = ['job']
+val = ['python developer']
+
+emp.update(zip(field,val))
+
+for key,value in emp.items():
+    print(f"{key}:{value}")
+
+
+
+fields = ['first_name', 'last_name', 'age', 'job']
+values = ['John', 'Doe', '45', 'Python Developer']
+
+a_dict = dict(zip(fields,values))
+print(a_dict)
